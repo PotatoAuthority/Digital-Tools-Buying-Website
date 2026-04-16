@@ -3,7 +3,7 @@ import NavLogo from '../../assets/DigiTools (1).png'
 
 const NewNavbar = () => {
     return (
-        <div className='bg-base-200 shadow-sm'>
+        <div className='bg-base-100 shadow-sm'>
             <div className='md:h-[92px] flex items-center w-70% max-w-[1200px] mx-auto'>
 <div className="navbar">
   <div className="navbar-start">
@@ -29,7 +29,7 @@ const NewNavbar = () => {
     </a> */}
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 font-semibold text-[16px]">
       <li><a>Products</a></li>
       <li><a>Features</a></li>
       <li><a>Pricing</a></li>
@@ -45,9 +45,9 @@ const NewNavbar = () => {
                         </div>
                     </div>
                     <ul className="menu menu-horizontal px-1">
-                        <li><button>Login</button></li>
+                        <li className='font-semibold md:text-[16px]'><button>Login</button></li>
                     </ul>
-                    <button className="btn btn-primary rounded-full hidden md:flex">Get Started</button>
+                    <button className="text-white btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full hidden md:flex inter font-semibold text-[16px]">Get Started</button>
   </div>
 </div>
             </div>
