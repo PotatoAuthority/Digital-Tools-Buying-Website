@@ -1,5 +1,6 @@
 
 import './App.css'
+import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import NewNavbar from './Components/Navbar/NewNavbar'
 
@@ -9,7 +10,7 @@ function App() {
     <div>
       {/* <Navbar></Navbar> */}
       <NewNavbar></NewNavbar>
-      <p>This is My Project</p>
+      <Banner></Banner>
     </div>
   )
 }

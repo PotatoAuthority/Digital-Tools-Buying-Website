@@ -4,7 +4,7 @@ import NavLogo from '../../assets/DigiTools (1).png'
 const NewNavbar = () => {
     return (
         <div className='bg-base-100 shadow-sm'>
-            <div className='md:h-[92px] flex items-center w-70% max-w-[1200px] mx-auto'>
+            <div className='md:h-[92px] flex items-center w-[90%] md:w-70% md:max-w-[1200px] mx-auto'>
 <div className="navbar">
   <div className="navbar-start">
     <div className="dropdown">
