@@ -6,6 +6,7 @@ import MainSection from './Components/Main section/MainSection'
 import Navbar from './Components/Navbar/Navbar'
 import NewNavbar from './Components/Navbar/NewNavbar'
 import Stats from './Components/Stats/Stats'
+import { Bounce, ToastContainer } from 'react-toastify'
 
 
 const fetchProducts = async() =>{
@@ -32,6 +33,21 @@ function App() {
         <MainSection productsPromise={productsPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></MainSection>
 
       </Suspense>
+
+
+      <ToastContainer
+      position="top-right"
+      autoClose={2000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick={false}
+      rtl={false}
+      pauseOnFocusLoss={false}
+      draggable
+      pauseOnHover={false}
+      theme="light"
+      transition={Bounce}
+      />
     </div>
   )
 }

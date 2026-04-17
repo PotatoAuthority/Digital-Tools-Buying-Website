@@ -1,11 +1,13 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import { toast } from 'react-toastify';
 const CartCard = ({selectedProd, selectedProducts, setSelectedProducts}) => {
 
     const handleRemove = (selectedProd) =>{
         // console.log(selectedProd.name);
         const filteredProducts = selectedProducts.filter( prod => prod.name !== selectedProd.name);
         setSelectedProducts([...filteredProducts]);
+        toast.info(selectedProd.name+" has been removed");
         // console.log("filtered", selectedProducts);
         // console.log("filtered2", filteredProducts);
 

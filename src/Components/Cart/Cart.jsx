@@ -1,11 +1,13 @@
 import React from 'react';
 import ProductCard from '../Products/ProductCard';
 import CartCard from './CartCard';
+import { toast } from 'react-toastify';
 
 const cart = ({selectedProducts, setSelectedProducts}) => {
 
     const handlePayment = () =>{
         setSelectedProducts([]);
+        toast.success('Purchase Successful!');
         // console.log(selectedProducts);
     } 
     const totalCost = () =>{
