@@ -28,8 +28,8 @@ const ProductCard = ({productInfo, handleBuy}) => {
 
             <div>
                 {
-                    productInfo.features.map(feature => 
-                        <div className='flex'>
+                    productInfo.features.map((feature, index) => 
+                        <div key={index} className='flex'>
                             <Check color="#30B868" /><p className='text-[16px] text-[#627382] leading-5 font-medium'>{feature}</p>
                         </div>
                     )

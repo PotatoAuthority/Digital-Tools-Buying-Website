@@ -4,7 +4,7 @@ import Cart from '../Cart/Cart'
 
 const MainSection = ({productsPromise, setSelectedProducts, selectedProducts}) => {
     const productsData = use(productsPromise);
-    console.log(productsData);
+    // console.log(productsData);
 
     const [toggle, setToggle] = useState('products');
 
@@ -30,7 +30,7 @@ const MainSection = ({productsPromise, setSelectedProducts, selectedProducts}) =
                 toggle==="products"?
                 <div className="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
                     {productsData.map(productInfo => 
-                    <Products productInfo={productInfo} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}
+                    <Products key={productInfo.id} productInfo={productInfo} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}
                         
                     ></Products>)}
                     {/* <Products></Products> */}

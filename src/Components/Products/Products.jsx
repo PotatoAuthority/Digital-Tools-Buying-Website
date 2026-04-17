@@ -10,7 +10,7 @@ const Products = ({productInfo, setSelectedProducts, selectedProducts}) => {
         setSelectedProducts([...selectedProducts, productInfo]);
         toast.success(productInfo.name+" added to cart");
     }
-    console.log("cart", selectedProducts)
+    // console.log("cart", selectedProducts)
     return (
         <ProductCard productInfo={productInfo} handleBuy={handleBuy}></ProductCard>
     );
