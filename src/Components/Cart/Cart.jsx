@@ -2,6 +2,7 @@ import React from 'react';
 import ProductCard from '../Products/ProductCard';
 import CartCard from './CartCard';
 import { toast } from 'react-toastify';
+import { ShoppingCart } from 'lucide-react';
 
 const cart = ({selectedProducts, setSelectedProducts}) => {
 
@@ -24,7 +25,17 @@ const cart = ({selectedProducts, setSelectedProducts}) => {
 
                 {
                     selectedProducts.length === 0? 
-                    <p>Please add Products</p>
+                    <div>
+                        <div className='flex items-center gap-4 justify-center'>
+                            <div>
+                                <ShoppingCart size={50} />
+                            </div>
+                            <p className='text-3xl font-bold'>Cart is empty!</p>
+
+                        </div>
+                        <p className='text-center mt-2 text-[18px] text-[#627382]'>Please add products to cart</p>
+
+                    </div>
                     :
                     <div>
                         <div className='flex flex-col gap-4 '>
