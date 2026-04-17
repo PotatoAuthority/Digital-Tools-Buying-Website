@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Social Media Content Kit",
+    "description": "Ready-to-use content pack for Instagram, Facebook, and LinkedIn growth.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "200+ post templates",
+      "Caption library",
+      "Hashtag strategies",
+      "Editable Canva files"
+    ],
+    "icon": "share-2"
+  },
+  {
+    "id": 2,
+    "name": "Resume Builder Pro",
+    "description": "Create ATS-friendly resumes that stand out to recruiters.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "ATS optimization",
+      "100+ resume templates",
+      "Export to PDF",
+      "AI suggestions"
+    ],
+    "icon": "file-text"
+  },
+  {
+    "id": 3,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and workflows with ease.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "trending",
+    "tagType": "hot",
+    "features": [
+      "Pre-built automation flows",
+      "Zapier integration",
+      "Task scheduling",
+      "API access"
+    ],
+    "icon": "cpu"
+  },
+  {
+    "id": 4,
+    "name": "Premium Stock Assets",
+    "description": "Access high-quality images, videos, and graphics.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10,000+ HD images",
+      "4K video clips",
+      "Royalty-free license",
+      "Weekly updates"
+    ],
+    "icon": "image"
+  },
+  {
+    "id": 5,
+    "name": "Design Templates Pack",
+    "description": "Professional templates for web, social, and print design.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "value",
+    "tagType": "deal",
+    "features": [
+      "500+ templates",
+      "Figma & Canva support",
+      "Fully customizable",
+      "Commercial use license"
+    ],
+    "icon": "layout"
+  },
+  {
+    "id": 6,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content using advanced AI tools.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Blog & copy generation",
+      "SEO optimization",
+      "Tone customization",
+      "Multi-language support"
+    ],
+    "icon": "edit-3"
+  },
+  {
+    "id": 7,
+    "name": "Email Marketing Suite",
+    "description": "Build, automate, and optimize email campaigns.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Drag & drop builder",
+      "Automation sequences",
+      "Analytics dashboard",
+      "A/B testing"
+    ],
+    "icon": "mail"
+  },
+  {
+    "id": 8,
+    "name": "Freelancer Starter Pack",
+    "description": "All-in-one toolkit for launching your freelance career.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "bundle",
+    "tagType": "special",
+    "features": [
+      "Proposal templates",
+      "Invoice generator",
+      "Client onboarding kit",
+      "Portfolio templates"
+    ],
+    "icon": "briefcase"
+  },
+  {
+    "id": 9,
+    "name": "SEO Optimization Toolkit",
+    "description": "Boost your website ranking with powerful SEO tools and insights.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "trending",
+    "tagType": "hot",
+    "features": [
+      "Keyword research tools",
+      "On-page SEO checker",
+      "Competitor analysis",
+      "Performance reports"
+    ],
+    "icon": "search"
+  }
+]

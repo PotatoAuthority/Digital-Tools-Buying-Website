@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
+import Products from '../Products/Products';
 
-const MainSection = () => {
+const MainSection = ({productsPromise}) => {
+    const productsData = use(productsPromise);
+    console.log(productsData);
+
     const [toggle, setToggle] = useState('products');
 
     return (
@@ -21,10 +25,14 @@ const MainSection = () => {
                 Cart (0)</button>
             </div>
 
-            <div className="products">
-
+            <div className="products grid grid-cols-3 gap-7.5">
+                {productsData.map(productInfo => 
+                <Products productInfo={productInfo}
+                    
+                ></Products>)}
+                {/* <Products></Products> */}
             </div>
-            <p>cards</p>
+            
         </div>
     );
 };
