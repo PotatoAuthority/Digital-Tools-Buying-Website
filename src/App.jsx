@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import MainSection from './Components/Main section/MainSection'
@@ -16,10 +16,12 @@ const fetchProducts = async() =>{
 function App() {
 
   const productsPromise = fetchProducts();
+
+  const [selectedProducts, setSelectedProducts] = useState([]);
   return (
     <div>
       {/* <Navbar></Navbar> */}
-      <NewNavbar></NewNavbar>
+      <NewNavbar selectedProducts={selectedProducts}></NewNavbar>
       <Banner></Banner>
       <Stats></Stats>
       <Suspense fallback={
@@ -27,7 +29,7 @@ function App() {
           <span className="loading loading-bars loading-lg"></span>
         </div>
       }>
-        <MainSection productsPromise={productsPromise}></MainSection>
+        <MainSection productsPromise={productsPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></MainSection>
 
       </Suspense>
     </div>

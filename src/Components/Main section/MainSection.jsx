@@ -1,7 +1,7 @@
 import React, { use, useState } from 'react';
 import Products from '../Products/Products';
 
-const MainSection = ({productsPromise}) => {
+const MainSection = ({productsPromise, setSelectedProducts, selectedProducts}) => {
     const productsData = use(productsPromise);
     console.log(productsData);
 
@@ -22,12 +22,12 @@ const MainSection = ({productsPromise}) => {
                 Products</button>
                 <button onClick={() => setToggle('cart')} 
                     className={`${toggle==="cart"? 'btn-primary' : 'btn-outline'} btn  btn-primary rounded-l-none rounded-r-full`}>
-                Cart (0)</button>
+                Cart ({selectedProducts.length})</button>
             </div>
 
             <div className="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
                 {productsData.map(productInfo => 
-                <Products productInfo={productInfo}
+                <Products productInfo={productInfo} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}
                     
                 ></Products>)}
                 {/* <Products></Products> */}

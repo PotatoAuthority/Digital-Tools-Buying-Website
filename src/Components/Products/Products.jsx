@@ -2,7 +2,12 @@
 import { Check } from 'lucide-react';
 import React from 'react';
 
-const Products = ({productInfo}) => {
+const Products = ({productInfo, setSelectedProducts, selectedProducts}) => {
+
+    const handleBuy =(productInfo) =>{
+        setSelectedProducts([...selectedProducts, productInfo]);
+    }
+    console.log("cart", selectedProducts)
     return (
         <div className='rounded-2xl border-2 border-[#f2f2f290] shadow-sm p-6 flex flex-col gap-4 relative'>
             <div className='rounded-full border border-[#f2f2f290] border-2 w-[60px] h-[60px] p-1 flex items-center justify-center'>
@@ -35,7 +40,7 @@ const Products = ({productInfo}) => {
                 }
             </div>
 
-            <button className="text-white w-full btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full inter font-semibold text-[16px] h-13">Buy Now</button>
+            <button onClick={() => handleBuy(productInfo)} className="text-white w-full btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full inter font-semibold text-[16px] h-13">Buy Now</button>
         </div>
     );
 };
