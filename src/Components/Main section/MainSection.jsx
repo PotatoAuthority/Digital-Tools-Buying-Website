@@ -1,5 +1,6 @@
 import React, { use, useState } from 'react';
 import Products from '../Products/Products';
+import Cart from '../Cart/Cart'
 
 const MainSection = ({productsPromise, setSelectedProducts, selectedProducts}) => {
     const productsData = use(productsPromise);
@@ -25,13 +26,19 @@ const MainSection = ({productsPromise, setSelectedProducts, selectedProducts}) =
                 Cart ({selectedProducts.length})</button>
             </div>
 
-            <div className="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
-                {productsData.map(productInfo => 
-                <Products productInfo={productInfo} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}
-                    
-                ></Products>)}
-                {/* <Products></Products> */}
-            </div>
+            {
+                toggle==="products"?
+                <div className="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5">
+                    {productsData.map(productInfo => 
+                    <Products productInfo={productInfo} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}
+                        
+                    ></Products>)}
+                    {/* <Products></Products> */}
+                </div>
+                :
+                <Cart selectedProducts={selectedProducts}></Cart>
+            }
+            
             
         </div>
     );
