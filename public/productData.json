@@ -5,7 +5,7 @@
     "description": "Ready-to-use content pack for Instagram, Facebook, and LinkedIn growth.",
     "price": 19,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "200+ post templates",
@@ -13,7 +13,7 @@
       "Hashtag strategies",
       "Editable Canva files"
     ],
-    "icon": "share-2"
+    "icon": "https://i.ibb.co.com/W41zTQnF/social-media.png"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "description": "Create ATS-friendly resumes that stand out to recruiters.",
     "price": 12,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "tagType": "best",
     "features": [
       "ATS optimization",
@@ -29,7 +29,7 @@
       "Export to PDF",
       "AI suggestions"
     ],
-    "icon": "file-text"
+    "icon": "https://i.ibb.co.com/SXCjsD7R/portfolio.png"
   },
   {
     "id": 3,
@@ -37,7 +37,7 @@
     "description": "Automate repetitive tasks and workflows with ease.",
     "price": 39,
     "period": "monthly",
-    "tag": "trending",
+    "tag": "Trending",
     "tagType": "hot",
     "features": [
       "Pre-built automation flows",
@@ -45,7 +45,7 @@
       "Task scheduling",
       "API access"
     ],
-    "icon": "cpu"
+    "icon": "https://i.ibb.co.com/WvTYWsNq/operation.png"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "description": "Access high-quality images, videos, and graphics.",
     "price": 25,
     "period": "monthly",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "features": [
       "10,000+ HD images",
@@ -61,7 +61,7 @@
       "Royalty-free license",
       "Weekly updates"
     ],
-    "icon": "image"
+    "icon": "https://i.ibb.co.com/FqzdzWGt/camera.png"
   },
   {
     "id": 5,
@@ -69,7 +69,7 @@
     "description": "Professional templates for web, social, and print design.",
     "price": 49,
     "period": "one-time",
-    "tag": "value",
+    "tag": "Value",
     "tagType": "deal",
     "features": [
       "500+ templates",
@@ -77,7 +77,7 @@
       "Fully customizable",
       "Commercial use license"
     ],
-    "icon": "layout"
+    "icon": "https://i.ibb.co.com/GXp2HDb/design-tool.png"
   },
   {
     "id": 6,
@@ -85,7 +85,7 @@
     "description": "Generate high-quality content using advanced AI tools.",
     "price": 15,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "Blog & copy generation",
@@ -93,7 +93,7 @@
       "Tone customization",
       "Multi-language support"
     ],
-    "icon": "edit-3"
+    "icon": "https://i.ibb.co.com/8D49hCCr/writing-2327400-1.png"
   },
   {
     "id": 7,
@@ -101,7 +101,7 @@
     "description": "Build, automate, and optimize email campaigns.",
     "price": 29,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "tagType": "best",
     "features": [
       "Drag & drop builder",
@@ -109,7 +109,7 @@
       "Analytics dashboard",
       "A/B testing"
     ],
-    "icon": "mail"
+    "icon": "https://i.ibb.co.com/Z6gx26f1/email.png"
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
     "description": "All-in-one toolkit for launching your freelance career.",
     "price": 59,
     "period": "one-time",
-    "tag": "bundle",
+    "tag": "Bundle",
     "tagType": "special",
     "features": [
       "Proposal templates",
@@ -125,7 +125,7 @@
       "Client onboarding kit",
       "Portfolio templates"
     ],
-    "icon": "briefcase"
+    "icon": "https://i.ibb.co.com/1JPDDPDJ/freelance.png"
   },
   {
     "id": 9,
@@ -133,7 +133,7 @@
     "description": "Boost your website ranking with powerful SEO tools and insights.",
     "price": 35,
     "period": "monthly",
-    "tag": "trending",
+    "tag": "Trending",
     "tagType": "hot",
     "features": [
       "Keyword research tools",
@@ -141,6 +141,6 @@
       "Competitor analysis",
       "Performance reports"
     ],
-    "icon": "search"
+    "icon": "https://i.ibb.co.com/tpJJFBZd/seo.png"
   }
 ]
