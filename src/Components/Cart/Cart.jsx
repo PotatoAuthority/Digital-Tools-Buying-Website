@@ -21,7 +21,7 @@ const cart = ({selectedProducts, setSelectedProducts}) => {
     return (
         <div className='rounded-2xl shadow-sm border-2 border-[#F2F2F2]'>
             <div className='p-4 sm:p-10'>
-                <h2 className='font-bold text-2xl text-[#101727] mb-6'>Your Cart</h2>
+                {/* <h2 className='font-bold text-2xl text-[#101727] mb-6'>Your Cart</h2> */}
 
                 {
                     selectedProducts.length === 0? 
@@ -38,6 +38,7 @@ const cart = ({selectedProducts, setSelectedProducts}) => {
                     </div>
                     :
                     <div>
+                        <h2 className='font-bold text-2xl text-[#101727] mb-6'>Your Cart</h2>
                         <div className='flex flex-col gap-4 '>
                             {
                                 selectedProducts.map(selectedProd => <CartCard selectedProd={selectedProd} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts}></CartCard>)
