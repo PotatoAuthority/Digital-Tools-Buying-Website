@@ -3,6 +3,11 @@ import ProductCard from '../Products/ProductCard';
 import CartCard from './CartCard';
 
 const cart = ({selectedProducts, setSelectedProducts}) => {
+
+    const handlePayment = () =>{
+        setSelectedProducts([]);
+        // console.log(selectedProducts);
+    } 
     const totalCost = () =>{
         let sum = 0;
         for (const prod of selectedProducts){
@@ -30,7 +35,7 @@ const cart = ({selectedProducts, setSelectedProducts}) => {
                             <p className='text-[16px] text-[#627382]'>Total:</p>
                             <p className='font-bold text-2xl text-[#101727]'>${totalCost()}</p>
                         </div>
-                        <button className="text-white w-full btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full inter font-semibold text-[16px] h-13">Proceed to Checkout</button>
+                        <button onClick={handlePayment} className="text-white w-full btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full inter font-semibold text-[16px] h-13">Proceed to Checkout</button>
                     </div>
                 }
                
