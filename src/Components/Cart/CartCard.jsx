@@ -1,6 +1,15 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-const CartCard = ({selectedProd}) => {
+const CartCard = ({selectedProd, selectedProducts, setSelectedProducts}) => {
+
+    const handleRemove = (selectedProd) =>{
+        // console.log(selectedProd.name);
+        const filteredProducts = selectedProducts.filter( prod => prod.name !== selectedProd.name);
+        setSelectedProducts([...filteredProducts]);
+        // console.log("filtered", selectedProducts);
+        // console.log("filtered2", filteredProducts);
+
+    }
     return (
         <div>
             <div>
@@ -15,7 +24,7 @@ const CartCard = ({selectedProd}) => {
                             <p className='font-medium text-[16px] text-[#627382]'>${selectedProd.price}</p>
                         </div>
                     </div>
-                    <button className="btn btn-soft btn-error">Remove</button>
+                    <button onClick={() => handleRemove(selectedProd)} className="btn btn-soft btn-error">Remove</button>
                 </div>
             </div>
         </div>

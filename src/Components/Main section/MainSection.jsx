@@ -36,7 +36,7 @@ const MainSection = ({productsPromise, setSelectedProducts, selectedProducts}) =
                     {/* <Products></Products> */}
                 </div>
                 :
-                <Cart selectedProducts={selectedProducts}></Cart>
+                <Cart selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></Cart>
             }
             
             
