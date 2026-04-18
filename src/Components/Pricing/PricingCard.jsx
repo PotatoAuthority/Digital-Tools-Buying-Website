@@ -24,8 +24,8 @@ const PricingCard = ({priceInfo}) => {
                 <p className={`text-[16px] leading-5 text-[#627382] mb-6 ${priceInfo.popular===true? 'text-white': ''}`}>{priceInfo.description}</p>
                 <p className={`text-4xl font-bold mb-6 ${priceInfo.popular===true? 'text-white': ''}`}>${priceInfo.price}<span className={`text-[20px] font-normal text-[#627382] ${priceInfo.popular===true? 'text-white': ''}`}>/{priceInfo.billing}</span></p>
                 {
-                    priceInfo.features.map(feature => 
-                    <div className='flex gap-1'>
+                    priceInfo.features.map((feature, index) => 
+                    <div key={index} className='flex gap-1'>
                         <Check color={priceInfo.popular===true? "white" : "#30B868"}></Check>
                         <p className={`text-[16px] font-medium leading-5 text-[#627382] ${priceInfo.popular===true? 'text-white': ''}`}>{feature}</p>
                     </div>)
