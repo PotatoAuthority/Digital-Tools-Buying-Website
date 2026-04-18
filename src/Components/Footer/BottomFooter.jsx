@@ -5,7 +5,7 @@ const BottomFooter = () => {
         <div className='bg-[#101727] flex items-center w-full pt-30'>
 
             <div className='w-[90%] md:w-70% md:max-w-[1200px] mx-auto'>
-                <div className="container flex flex-col md:flex-row justify-between text-white mb-20 gap-10 md:gap-0">
+                <div className="flex flex-col md:flex-row justify-between text-white mb-20 gap-10 md:gap-0">
                     <div className="left w-full md:w-[30%] text-center md:text-left">
                         <h1 className='text-[40px] font-bold mb-4'>DigiTools</h1>
                         <p className='text-white/80 text-[16px] leading-6'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
@@ -38,7 +38,7 @@ const BottomFooter = () => {
 
                     <div className="right text-center md:text-left">
                         <p className='font-medium text-[20px] leading-7 mb-3'>Social Links</p>
-                        <div className='text-2xl flex gap-1.5 justify-center md:justify-start'>
+                        <div className='text-2xl flex gap-1.5 justify-center'>
                             <a href=""><i className="fa-brands fa-instagram"></i></a>
                             <a href=""><i className="fa-brands fa-square-facebook"></i></a>
                             <a href=""><i className="fa-brands fa-x-twitter"></i></a>
