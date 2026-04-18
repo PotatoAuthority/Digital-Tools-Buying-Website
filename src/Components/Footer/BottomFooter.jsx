@@ -37,15 +37,34 @@ const BottomFooter = () => {
                     </div>
 
                     <div className="right">
-                        <p className='font-medium text-[20px] leading-7'>Social Links</p>
-                        <div></div>
+                        <p className='font-medium text-[20px] leading-7 mb-3'>Social Links</p>
+                        <div className='text-2xl flex gap-1.5'>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            
+                            
+                            
+                        </div>
                     </div>
                 </div>
 
                 <hr className="border-t border-[#FAFAFA]/20 mb-7" />
 
-                <div>
+                <div className='text-[#FAFAFA]/50 text-[16px] leading-6 flex justify-between mb-7'>
+                    <div className="left">
+                        <p>© 2026 Digitools. All rights reserved.</p>
+                    </div>
 
+                    <div className="right">
+                        <ul className='flex gap-5'>
+                            <a href=""><li>Privacy Policy</li></a>
+                            <a href=""><li>Terms of Service</li></a>
+                            <a href=""><li>Cookies</li></a>
+                            
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
             
