@@ -41,7 +41,7 @@ const cart = ({selectedProducts, setSelectedProducts}) => {
                         <h2 className='font-bold text-2xl text-[#101727] mb-6'>Your Cart</h2>
                         <div className='flex flex-col gap-4 '>
                             {
-                                selectedProducts.map(selectedProd => <CartCard key={selectedProd.id} selectedProd={selectedProd} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts}></CartCard>)
+                                selectedProducts.map((selectedProd, index) => <CartCard key={index} selectedProd={selectedProd} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts}></CartCard>)
                             }
                         </div>
 

@@ -5,7 +5,7 @@ const CartCard = ({selectedProd, selectedProducts, setSelectedProducts}) => {
 
     const handleRemove = (selectedProd) =>{
         // console.log(selectedProd.name);
-        const filteredProducts = selectedProducts.filter( prod => prod.name !== selectedProd.name);
+        const filteredProducts = selectedProducts.filter( prod => prod.id !== selectedProd.id);
         setSelectedProducts([...filteredProducts]);
         toast.info(selectedProd.name+" has been removed");
         // console.log("filtered", selectedProducts);
