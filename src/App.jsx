@@ -9,6 +9,7 @@ import Stats from './Components/Stats/Stats'
 import { Bounce, ToastContainer } from 'react-toastify'
 import Steps from './Components/Steps/Steps'
 import Pricing from './Components/Pricing/Pricing'
+import TopFooter from './Components/Footer/TopFooter'
 
 
 const fetchProducts = async() =>{
@@ -38,6 +39,7 @@ function App() {
 
       <Steps></Steps>
       <Pricing></Pricing>
+      <TopFooter></TopFooter>
 
 
       <ToastContainer
