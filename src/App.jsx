@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar'
 import NewNavbar from './Components/Navbar/NewNavbar'
 import Stats from './Components/Stats/Stats'
 import { Bounce, ToastContainer } from 'react-toastify'
+import Steps from './Components/Steps/Steps'
 
 
 const fetchProducts = async() =>{
@@ -33,6 +34,8 @@ function App() {
         <MainSection productsPromise={productsPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></MainSection>
 
       </Suspense>
+
+      <Steps></Steps>
 
 
       <ToastContainer
