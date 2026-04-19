@@ -22,9 +22,11 @@ https://digital-tools-buying-website-b13-a6.netlify.app/
 
 ## ✨ Features
 
-- Fully responsive navbar and banner section designed from Figma. Cart icon dynamically displays product count.
+- Fully responsive website across any screen size. 
 
-- The main functionality of the page is displaying of products dynamically from .json file and toggle between product section and cart section. Each product is dynamically created very easily because of React's component driven technology. Products added to cart can be removed and the number of added products can be dynamically seen. Pressing Proceed to payment button clears the cart.
+- Cart icon dynamically displays product count when product is added to cart.
+
+- Beautifully designed product section which is generated from .json file. Each product is dynamically created very easily because of React's component driven technology. Products added to cart can be removed and the number of added products can be dynamically seen. Pressing Proceed to payment button clears the cart.
 
 - Users can easily get notified about adding products to card, removing from cart, and payment action because of notification alert from React Toasters
 
